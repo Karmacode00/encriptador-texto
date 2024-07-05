@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <p>Sólo letras minúsculas y sin acentos.</p>
+        <textarea id="inputText" placeholder="Ingresa el texto aquí..." rows="4"></textarea>
+        <div class="buttons">
+            <button onclick="encryptText()">Encriptar</button>
+            <button onclick="decryptText()">Desencriptar</button>
+        </div>
+        <textarea id="outputText" placeholder="Resultado..." rows="4" readonly></textarea>
+        <button onclick="copyToClipboard()">Copiar texto</button>
+        <p id="errorMessage" class="error"></p>
+    </div>
+    <footer>
+        <p>Desarrollado el año 2024 por Andrea</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
